@@ -1,0 +1,144 @@
+/* Basic Card */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.card-basic {
+  width: 22rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 1px 3px 0 rgb(0 0 0 / 12%);
+  background-color: white;
+}
+
+.card-img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-heading {
+  margin-left: 12px;
+  margin-bottom: 4px;
+  letter-spacing: 0.025rem;
+  color: #393d3d;
+}
+
+.card-subHeading {
+  margin-left: 12px;
+  letter-spacing: 0.03rem;
+  color: #6a6e6e;
+  font-weight: 500;
+}
+
+.card-description {
+  margin-left: 12px;
+  margin-top: 1rem;
+  letter-spacing: 0.025rem;
+  color: #838686;
+  font-weight: lighter;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.card-footer {
+  margin: 1.6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  letter-spacing: 0.04rem;
+  color: #32c1cd;
+  font-weight: 600;
+}
+
+.heart-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* card text over media */
+
+.card-text-overMedia {
+  position: relative;
+}
+
+.heading-subHeading-overMedia-container {
+  position: absolute;
+  top: 6.6rem;
+}
+
+.heading-overMedia {
+  color: white;
+}
+
+.subHeading-overMedia {
+  color: white;
+}
+
+/* card with only icons */
+
+.card-withOnly-icons {
+  visibility: hidden;
+}
+
+/* card with only buttons */
+
+.card-withOnly-button {
+  visibility: hidden;
+}
+
+/* card with horizontal image and text */
+
+.Card-horizontalImage-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Card-horizontalImage-text-description {
+  display: none;
+}
+
+.Card-horizontalImage-text-img {
+  width: 35%;
+  height: 70%;
+}
+
+/* card with header over top */
+
+.card-withHeader-overTop {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-withHeader-overTop :nth-child(1) {
+  order: 2;
+  border-radius: 0;
+}
+
+.card-withHeader-overTop :nth-child(2) {
+  order: 1;
+  margin-bottom: 1rem;
+}
+
+.card-withHeader-overTop :nth-child(3) {
+  order: 3;
+}
