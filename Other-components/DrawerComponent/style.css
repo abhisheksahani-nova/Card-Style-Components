@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: yellowgreen;
+  color: #333333;
+}
+
+.container {
+}
+
+.drawer-container {
+  background-color: white;
+  width: 15rem;
+}
+
+.drawer_header-container {
+  height: 11%;
+  padding: 1rem 0 0 1rem;
+}
+
+.drawer-title {
+  margin: 0;
+}
+
+.drawer-subtitle {
+  margin: 0;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.2rem 0 0.2rem;
+}
+
+.list-item {
+  margin: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  cursor: pointer;
+}
+
+.drawer-icon {
+  margin-right: 2.2rem;
+}
+
+.list-container {
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.drawer-label {
+  margin: 0;
+  padding: 1rem 0 0 1rem;
+}

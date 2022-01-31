@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="drawer-container">
+        <div class="drawer_header-container">
+          <h3 class="drawer-title">Mail</h3>
+          <p class="drawer-subtitle">email@material.io</p>
+        </div>
+
+        <div class="list-container">
+          <ul class="list">
+            <li class="list-item" onclick="handleListItemClick()">
+              <img class="drawer-icon" src="icons/inbox.png" /> Inbox
+            </li>
+            <li class="list-item" onclick="handleListItemClick()">
+              <img class="drawer-icon" src="icons/star.png" /> Star
+            </li>
+            <li class="list-item" onclick="handleListItemClick()">
+              <img class="drawer-icon" src="icons/sent.png" /> Sent Mail
+            </li>
+            <li class="list-item" onclick="handleListItemClick()">
+              <img class="drawer-icon" src="icons/drafts.png" /> Drafts
+            </li>
+          </ul>
+        </div>
+
+        <div class="list-container">
+          <p class="drawer-label">Labels</p>
+          <ul class="list">
+            <li class="list-item" onclick="handleListItemClick()">
+              <img class="drawer-icon" src="icons/label.png" /> Family
+            </li>
+            <li class="list-item" onclick="handleListItemClick()">
+              <img class="drawer-icon" src="icons/label.png" /> Friends
+            </li>
+            <li class="list-item" onclick="handleListItemClick()">
+              <img class="drawer-icon" src="icons/label.png" /> Work
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="list">
+            <li class="list-item" onclick="handleListItemClick()">
+              <img class="drawer-icon" src="icons/gear.png" /> Settings
+            </li>
+            <li class="list-item" onclick="handleListItemClick()">
+              <img class="drawer-icon" src="icons/feedback.png" /> Help &
+              feedback
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

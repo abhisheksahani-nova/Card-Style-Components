@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-container">
+        <h3 class="text-para">Text with a badge</h3>
+        <div class="text-badge">4</div>
+
+        <h3 class="text-para">Text with large badge</h3>
+        <div class="text-badge overText-badge">1</div>
+
+        <div class="badge-overBtn-container">
+          <h3 class="text-para">Button with a badge on the left</h3>
+          <button class="badge-btn">Action</button>
+          <div class="text-badge badge-overBtn">8</div>
+        </div>
+
+        <div class="badge-overBtn-container">
+          <h3 class="text-para">Button toggles badge visibility</h3>
+          <button id="hide_Btn" class="badge-btn hide-btn">Hide</button>
+          <div id="hide_Badge" class="text-badge hide-badge">7</div>
+        </div>
+
+        <div class="badge-overBtn-container">
+          <h3 class="text-para">Icon with a badge</h3>
+          <img src="icons/home.png" class="icon" />
+          <div class="text-badge badge-overIcon">15</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const hideBadge = document.getElementById("hide_Badge");
+      const hideBtn = document.getElementById("hide_Btn");
+
+      hideBtn.addEventListener("click", () => {
+        if (hideBadge.style.display === "none") {
+          hideBadge.style.display = "flex";
+        } else {
+          hideBadge.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
